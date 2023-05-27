@@ -46,21 +46,6 @@ export function Home() {
 					Nossos cafés
 				</CoffeeTitle>
 
-				{/* <CoffeeCard coffeeType="tradicional" />
-				<CoffeeCard coffeeType="americano" />
-				<CoffeeCard coffeeType="cremoso" />
-				<CoffeeCard coffeeType="gelado" />
-				<CoffeeCard coffeeType="leite" />
-				<CoffeeCard coffeeType="latte" />
-				<CoffeeCard coffeeType="capuccino" />
-				<CoffeeCard coffeeType="macchiato" />
-				<CoffeeCard coffeeType="mocaccino" />
-				<CoffeeCard coffeeType="quente" />
-				<CoffeeCard coffeeType="cubano" />
-				<CoffeeCard coffeeType="havaiano" />
-				<CoffeeCard coffeeType="arabe" />
-				<CoffeeCard coffeeType="irlandes" /> */}
-
 				{Coffees.map((coffee, index) => {
 					return <CoffeeCard key={index} coffeeIndex={index} />
 				})}

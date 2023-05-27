@@ -1,31 +1,28 @@
-import { CartContainer, CartInfoContainer, CheckoutContainer, CostumerContainer, CostumerFormContainer, CostumerInfoContainer, CostumerTitle } from "./styles";
-import { MapPinLine } from 'phosphor-react'
+import { CartContainer, CartInfoContainer, CheckoutContainer, CustomerContainer, CustomerInfoContainer } from "./styles";
+import { CustomerForm } from "./components/CustomerForm";
+import { CoffeeOrder } from "./components/CoffeeOrder";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 
 export function Checkout() {
+	const { cartState } = useContext(CartContext)
+
 	return (
 		<CheckoutContainer>
-			<CostumerContainer>
+			<CustomerContainer>
 				<span>Complete seu pedido</span>
 
-				<CostumerInfoContainer>
-					<CostumerTitle>
-						<div>
-							<MapPinLine size={22} />
-							<span>Endereço de Entrega</span>
-						</div>
-						<span>Informe o endereço onde deseja receber seu pedido</span>
-					</CostumerTitle>
-
-					<CostumerFormContainer>
-
-					</CostumerFormContainer>
-				</CostumerInfoContainer>
-			</CostumerContainer>
+				<CustomerInfoContainer>
+					<CustomerForm />
+				</CustomerInfoContainer>
+			</CustomerContainer>
 
 			<CartContainer>
 				<span>Cafés selecionados</span>
 				<CartInfoContainer>
-					<span>abde</span>
+					{cartState.map(coffee => {
+						return <CoffeeOrder key={coffee.coffeeIndex} coffeeCart={coffee} />
+					})}
 				</CartInfoContainer>
 			</CartContainer>
 		</CheckoutContainer>

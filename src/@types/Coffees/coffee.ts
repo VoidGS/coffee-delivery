@@ -1,6 +1,21 @@
+import tradicionalImg from '../../assets/img/Coffees/tradicional.svg'
+import americanoImg from '../../assets/img/Coffees/americano.svg'
+import cremosoImg from '../../assets/img/Coffees/cremoso.svg'
+import geladoImg from '../../assets/img/Coffees/gelado.svg'
+import leiteImg from '../../assets/img/Coffees/leite.svg'
+import latteImg from '../../assets/img/Coffees/latte.svg'
+import capuccinoImg from '../../assets/img/Coffees/capuccino.svg'
+import macchiatoImg from '../../assets/img/Coffees/macchiato.svg'
+import mocaccinoImg from '../../assets/img/Coffees/mocaccino.svg'
+import quenteImg from '../../assets/img/Coffees/quente.svg'
+import cubanoImg from '../../assets/img/Coffees/cubano.svg'
+import havaianoImg from '../../assets/img/Coffees/havaiano.svg'
+import arabeImg from '../../assets/img/Coffees/arabe.svg'
+import irlandesImg from '../../assets/img/Coffees/irlandes.svg'
+
 export const Coffees = [
 	{
-		'img': new URL('../../assets/img/Coffees/tradicional.svg', import.meta.url).href,
+		'img': tradicionalImg,
 		'tags': [
 			'Tradicional'
 		],
@@ -9,7 +24,7 @@ export const Coffees = [
 		'price': '9,90',
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/americano.svg', import.meta.url).href,
+		'img': americanoImg,
 		'tags': [
 			'Tradicional'
 		],
@@ -18,7 +33,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/cremoso.svg', import.meta.url).href,
+		'img': cremosoImg,
 		'tags': [
 			'Tradicional'
 		],
@@ -27,7 +42,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/gelado.svg', import.meta.url).href,
+		'img': geladoImg,
 		'tags': [
 			'Tradicional',
 			'Gelado'
@@ -37,7 +52,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/leite.svg', import.meta.url).href,
+		'img': leiteImg,
 		'tags': [
 			'Tradicional',
 			'Com Leite'
@@ -47,7 +62,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/latte.svg', import.meta.url).href,
+		'img': latteImg,
 		'tags': [
 			'Tradicional',
 			'Com Leite'
@@ -57,7 +72,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/capuccino.svg', import.meta.url).href,
+		'img': capuccinoImg,
 		'tags': [
 			'Tradicional',
 			'Com Leite'
@@ -67,7 +82,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/macchiato.svg', import.meta.url).href,
+		'img': macchiatoImg,
 		'tags': [
 			'Tradicional',
 			'Com Leite'
@@ -77,7 +92,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/mocaccino.svg', import.meta.url).href,
+		'img': mocaccinoImg,
 		'tags': [
 			'Tradicional',
 			'Com Leite'
@@ -87,7 +102,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/quente.svg', import.meta.url).href,
+		'img': quenteImg,
 		'tags': [
 			'Especial',
 			'Com Leite'
@@ -97,7 +112,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/cubano.svg', import.meta.url).href,
+		'img': cubanoImg,
 		'tags': [
 			'Especial',
 			'Alcoólico',
@@ -108,7 +123,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/havaiano.svg', import.meta.url).href,
+		'img': havaianoImg,
 		'tags': [
 			'Especial'
 		],
@@ -117,7 +132,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/arabe.svg', import.meta.url).href,
+		'img': arabeImg,
 		'tags': [
 			'Especial'
 		],
@@ -126,7 +141,7 @@ export const Coffees = [
 		'price': '9,90'
 	},
 	{
-		'img': new URL('../../assets/img/Coffees/irlandes.svg', import.meta.url).href,
+		'img': irlandesImg,
 		'tags': [
 			'Especial',
 			'Alcoólico'

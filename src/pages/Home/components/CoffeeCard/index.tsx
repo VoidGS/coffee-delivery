@@ -1,9 +1,9 @@
-import { BuyContainer, BuyForm, BuyFormContainer, CoffeeCardContainer, CoffeeDescription, CoffeeImage, CoffeeName, Price, PricePrefix, Tag, TagsContainer } from "./styles";
-import { Minus, Plus, ShoppingCart } from 'phosphor-react'
+import { BuyContainer, BuyFormContainer, CoffeeCardContainer, CoffeeDescription, CoffeeImage, CoffeeName, Price, PricePrefix, Tag, TagsContainer } from "./styles";
 import { Coffees } from "../../../../@types/Coffees/coffee";
+import { CoffeeCount } from "../CoffeeCount";
 
 interface CoffeeCardProps {
-	'coffeeIndex': number
+	coffeeIndex: number
 }
 
 export function CoffeeCard({ coffeeIndex }: CoffeeCardProps) {
@@ -28,13 +28,7 @@ export function CoffeeCard({ coffeeIndex }: CoffeeCardProps) {
 				</div>
 
 				<BuyFormContainer>
-					<BuyForm>
-						<Minus size={14} weight="bold" />
-						<span>1</span>
-						<Plus size={14} weight="bold" />
-					</BuyForm>
-
-					<span><ShoppingCart size={22} weight="fill" /></span>
+					<CoffeeCount coffeeIndex={coffeeIndex} variant="default" />
 				</BuyFormContainer>
 			</BuyContainer>
 		</CoffeeCardContainer >

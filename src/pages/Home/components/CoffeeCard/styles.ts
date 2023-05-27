@@ -107,29 +107,3 @@ export const BuyFormContainer = styled.div`
 		background-color: ${(props) => props.theme.purple};
 	}
 `
-
-export const BuyForm = styled.div`
-	display: flex;
-	align-items: center;
-	justify-items: center;
-	gap: 0.25rem;
-	background-color: ${(props) => props.theme["base-button"]};
-	padding: 0.5rem;
-	border-radius: 6px;
-
-	svg {
-		color: ${(props) => props.theme.purple};
-		cursor: pointer;
-		transition: .1s;
-	}
-
-	svg:hover {
-		color: ${(props) => props.theme["purple-dark"]};
-	}
-
-	span {
-		-webkit-user-select: none;
-		-ms-user-select: none;
-		user-select: none;
-	}
-`
